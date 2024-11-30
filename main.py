@@ -17,7 +17,7 @@ class MyWidget(QMainWindow):
         if self.do_paint:
             qp = QPainter()
             qp.begin(self)
-            self.circle(qp)
+            self.draw_circle(qp)
             qp.end()
         self.do_paint = False
 
