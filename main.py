@@ -17,7 +17,7 @@ class MyWidget(QMainWindow):
         if self.do_paint:
             qp = QPainter()
             qp.begin(self)
-            self.draw_flag(qp)
+            self.circle(qp)
             qp.end()
         self.do_paint = False
 
@@ -29,6 +29,7 @@ class MyWidget(QMainWindow):
         n = randint(1, 150)
         qp.setBrush(QColor(255, 255, 0))
         qp.drawEllipse(300, 300, n * 2, n * 2)
+
 
 
 if __name__ == '__main__':
